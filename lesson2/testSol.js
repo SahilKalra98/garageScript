@@ -1,8 +1,7 @@
 const addFunction = require('./sol.js');
 
 const test = (a,b,c) => {
-  const result = (addFunction(a,b) === c) ? console.log('Correct') : console.log('Wrong')
-  return result;
+  addFunction(a,b) === c ? console.log('Correct') : console.log('Wrong')
 }
 
 test(2,2,4);
